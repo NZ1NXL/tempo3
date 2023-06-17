@@ -81,7 +81,7 @@ body{
     margin-top: 30px;
 }
 
-.weather-box .temperatura{
+.weather-box .temperature{
     position: relative;
     color: #06283D;
     font-size: 4rem;
@@ -90,13 +90,13 @@ body{
     margin-left: -16px;
 }
 
-.weather-box .temperatura span{
+.weather-box .temperature span{
     position: absolute;
     margin-left: 4px;
     font-size: 1.5rem;
 }
 
-.weather-box .descricao{
+.weather-box .description{
     color: #06283D;
     font-size: 22px;
     font-weight: 500;
@@ -110,19 +110,19 @@ body{
     margin-top: 30px;
 }
 
-.weather-details .humidade, .weather-details .vento{
+.weather-details .humidity, .weather-details .wind{
     display: flex;
     align-items: center;
     width: 50%;
     height: 100px;
 }
 
-.weather-details .humidade{
+.weather-details .humidity{
     padding-left: 20px;
     justify-content: flex-start;
 }
 
-.weather-details .vento{
+.weather-details .wind{
     padding-right: 20px;
     justify-content: flex-end;
 }
