@@ -29,9 +29,9 @@ search.addEventListener('click', () => {
             error404.classList.remove('fadeIn');
 
             const image = document.querySelector('.weather-box img');
-            const temperature = document.querySelector('.weather-box .temperature');
-            const description = document.querySelector('.weather-box .description');
-            const humidity = document.querySelector('.weather-details .humidity span');
+            const temperature = document.querySelector('.weather-box .temperatura');
+            const description = document.querySelector('.weather-box .descricao');
+            const humidity = document.querySelector('.weather-details .humidade span');
             const wind = document.querySelector('.weather-details .wind span');
 
             switch (json.weather[0].main) {
@@ -59,10 +59,10 @@ search.addEventListener('click', () => {
                     image.src = '';
             }
 
-            temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
-            description.innerHTML = `${json.weather[0].description}`;
-            humidity.innerHTML = `${json.main.humidity}%`;
-            wind.innerHTML = `${parseInt(json.wind.speed)}Km/h`;
+            temperatura.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
+            descricao.innerHTML = `${json.weather[0].description}`;
+            humidade.innerHTML = `${json.main.humidade}%`;
+            vento.innerHTML = `${parseInt(json.vento.velocidade)}Km/h`;
 
             weatherBox.style.display = '';
             weatherDetails.style.display = '';
